@@ -12,9 +12,7 @@ This project is part of my **AWS Agentic AI Portfolio**, where I explore how AI 
 
 The application follows a **serverless AI agent architecture**.
 
-User → Amazon Bedrock Agent → Lambda Functions → DynamoDB  
-                                          ↓  
-                             Knowledge Base (S3)
+
 <img width="895" height="298" alt="Product_Reccomendation_Architecture" src="https://github.com/user-attachments/assets/6bb0e915-2ac4-4794-8d52-4ff893a1d2dd" />
 
 Core flow:
