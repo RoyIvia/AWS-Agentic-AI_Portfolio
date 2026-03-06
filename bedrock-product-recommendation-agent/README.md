@@ -1,5 +1,4 @@
 # Bedrock Product Recommendation Agent
-### AWS Agentic AI Portfolio Project
 
 This project demonstrates how to build an **AI-powered product recommendation chatbot using Amazon Bedrock Agents**. The chatbot interacts with users, understands their shopping needs, and recommends products by calling backend APIs and accessing structured knowledge.
 
