@@ -68,3 +68,116 @@ This project progressively builds a full AI shopping assistant.
 ---
 
 # Project Structure
+
+AWS-Agentic-AI_Portfolio
+│
+└── bedrock-product-recommendation-agent
+│
+├── 00-Create_agent
+│ └── README.md
+│
+├── 01-Update_cart
+│ └── README.md
+│
+├── 02-Personalise_Recommendation
+│ └── README.md
+│
+├── 03-Gift-Wrapping_Knowledge-base
+│ └── README.md
+│
+├── 04-Multi-Agent_Collaboration
+│ └── README.md
+│
+└── README.md
+
+
+Each module documents the **step-by-step implementation** and the infrastructure used.
+
+---
+
+# Infrastructure Deployment
+
+The workshop infrastructure is deployed using **AWS CloudFormation**.
+
+Resources created include:
+
+- DynamoDB product tables
+- API endpoints
+- Lambda functions
+- supporting IAM roles
+
+Deployment takes approximately **5–10 minutes**.
+
+---
+
+# Technologies Used
+
+- Amazon Bedrock Agents
+- AWS Lambda
+- Amazon DynamoDB
+- Amazon S3
+- Knowledge Bases for Bedrock
+- Amazon Personalize
+- AWS CloudFormation
+
+---
+
+# Skills Demonstrated
+
+This project demonstrates practical experience with:
+
+- AI Agents on AWS
+- Serverless architecture
+- API orchestration with AI
+- Knowledge-based AI responses
+- Multi-agent systems
+- AI-driven product recommendation systems
+
+---
+
+# Example Interaction
+
+User:
+
+> I'm looking for a gift for my sister's birthday.
+
+Agent:
+
+1. Asks clarifying questions
+2. Identifies product category
+3. Calls product API
+4. Returns recommended items
+
+---
+
+# Learning Objectives
+
+Through this project I explored:
+
+- Designing **AI agents that interact with cloud services**
+- Integrating **LLMs with APIs**
+- Building **multi-agent AI systems**
+- Combining **structured and unstructured data retrieval**
+
+---
+
+# Workshop Reference
+
+Implementation is based on the AWS workshop:
+
+https://catalog.workshops.aws/e-commerce-in-a-bot/en-US/getting-started
+
+---
+
+# Cleanup
+
+Since this project deploys AWS resources, ensure you **delete the CloudFormation stack** after testing to avoid unnecessary charges.
+
+---
+
+# Author
+
+**Roy Ivia**
+
+Cloud & DevOps Engineer  
+AWS | Kubernetes | AI Agents
