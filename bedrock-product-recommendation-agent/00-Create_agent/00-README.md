@@ -257,6 +257,11 @@ Agent workflow:
 
 The agent was able to successfully retrieve and present product recommendations.
 
+<img width="903" height="845" alt="image" src="https://github.com/user-attachments/assets/f6c09015-852e-4348-a0cb-973224d73fd9" />
+
+<img width="900" height="843" alt="image" src="https://github.com/user-attachments/assets/c915f218-f92e-4566-964f-47621a889c02" />
+
+
 ---
 
 
