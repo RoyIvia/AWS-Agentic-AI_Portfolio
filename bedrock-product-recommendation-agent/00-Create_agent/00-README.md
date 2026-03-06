@@ -74,4 +74,59 @@ Provide instructions that guide how the agent interacts with users.
 
 Example instruction:
 
+You are a helpful e-commerce assistant.
+Ask questions to understand the user's needs and recommend suitable products.
+Use the available APIs to retrieve products when enough information is gathered.
+
+
+
+---
+
+## Step 4 – Configure Action Group
+
+The agent requires **actions** to interact with backend services.
+
+Actions allow the agent to call APIs via Lambda functions.
+
+Configured action:
+
+Product Recommendation API
+
+---
+
+# Agent Configuration
+
+The agent is configured with:
+
+- Natural language instructions
+- API integration via Lambda
+- structured response generation
+
+This allows the agent to translate **user intent into API calls**.
+
+---
+
+# Testing the Agent
+
+Once deployed, the agent can be tested using the **Bedrock Agent Test Console**.
+
+Example conversation:
+
+User:
+
+> I'm looking for a birthday gift for my sister.
+
+Agent:
+
+- asks clarifying questions
+- identifies product category
+- retrieves recommendations
+
+---
+
+# Key Takeaways
+
+- Amazon Bedrock Agents can orchestrate backend services
+- Natural language instructions define agent behavior
+- APIs extend the capabilities of AI agents
 
