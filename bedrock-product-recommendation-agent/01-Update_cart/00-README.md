@@ -209,5 +209,3 @@ Key outcomes include:
 - Persistent cart storage using DynamoDB
 
 This stage transforms the system from a **simple recommendation agent** into a more interactive **shopping assistant capable of managing user selections**.
-
-In the following stage, the system will be enhanced with **personalized product recommendations using Amazon Personalize**.
