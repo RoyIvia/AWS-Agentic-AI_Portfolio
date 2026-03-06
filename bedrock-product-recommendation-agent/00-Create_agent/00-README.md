@@ -1,6 +1,5 @@
 # Product Recommendation Agent – Initial Setup
 
-## Overview
 
 This section documents the **initial creation of the Product Recommendation Agent** using **Amazon Bedrock Agents** as part of my **AWS Agentic AI Portfolio**.
 
