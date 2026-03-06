@@ -169,15 +169,8 @@ https://catalog.workshops.aws/e-commerce-in-a-bot/en-US/getting-started
 
 ---
 
-# Cleanup
-
-Since this project deploys AWS resources, ensure you **delete the CloudFormation stack** after testing to avoid unnecessary charges.
-
----
-
 # Author
 
 **Roy Ivia**
-
 Cloud & DevOps Engineer  
 AWS | Kubernetes | AI Agents
