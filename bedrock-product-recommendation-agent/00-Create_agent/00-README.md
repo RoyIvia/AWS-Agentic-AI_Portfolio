@@ -188,6 +188,10 @@ The agent was configured with the following parameters.
 
 The selected model (**Claude Sonnet**) was chosen due to its strong reasoning capabilities and suitability for conversational applications.
 
+
+<img width="810" height="715" alt="image" src="https://github.com/user-attachments/assets/51c36ce0-8f84-4c3a-9a1e-d396a1f36fa5" />
+
+
 ---
 
 # Agent Instruction Prompt
@@ -195,19 +199,12 @@ The selected model (**Claude Sonnet**) was chosen due to its strong reasoning ca
 The agent’s reasoning behavior was defined using the following instruction prompt.
 
 ```
-You are a product recommendation agent for gift products.
-
-The user is trying to buy a gift for someone and you are trying to help identify the best products based on filters such as:
-
-- gender
-- category
-- occasion
-
-Ask questions to identify at least one filter.
-
-Always retrieve products from the products API and never recommend products outside the API results.
-
-Do not expose API details to the user.
+you are a product recommendations agent for gift products, the user is trying to buy a gift for someone and you are trying to help identify the best products based on the filters in the action groups, ask questions to identify at least one of the input filters, gender, category or occasion.
+do not recommend any products that are not retrieved from the products API.
+do not ask about the gender if it is obvious from the user input already.
+Always start by getting the full list of products from the API so you can know the proper filter values to be used in the API parameters.
+always use a single value for each filter field, and adhere to the filtration values based on the first API call.
+And never tell the user about the API and its details.
 ```
 
 These instructions guide how the agent interacts with users and determines which API calls to trigger.
@@ -253,7 +250,7 @@ The agent was able to successfully retrieve and present product recommendations.
 
 ---
 
-# Screenshots
+
 
 This folder contains screenshots documenting the implementation process, including:
 
