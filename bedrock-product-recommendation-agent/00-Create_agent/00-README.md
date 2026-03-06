@@ -209,6 +209,11 @@ And never tell the user about the API and its details.
 
 These instructions guide how the agent interacts with users and determines which API calls to trigger.
 
+I Enabled User input in Additional settings:
+
+<img width="985" height="428" alt="image" src="https://github.com/user-attachments/assets/dadda6a2-2e44-4c31-98e7-eed4a33d83fc" />
+
+
 ---
 
 # Action Group Configuration
@@ -220,7 +225,11 @@ The action group enables the agent to invoke backend Lambda functions using a de
 Key configuration steps included:
 
 - Selecting the Lambda function responsible for retrieving products
-- Defining the API schema
+
+ <img width="981" height="364" alt="image" src="https://github.com/user-attachments/assets/87d83d39-f16e-4e5a-aeb4-5c2e2994d94f" />
+
+- Defining the API schema (bedrock-product-recommendation-agent/00-Create_agent/03-Action_Group_Schema)
+  
 - Mapping parameters between the agent and the API
 
 This integration enables the agent to fetch real product data instead of generating generic responses.
