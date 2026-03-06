@@ -264,6 +264,16 @@ The agent was able to successfully retrieve and present product recommendations.
 
 ---
 
+## Agent Interaction Example Breakdown
+
+During testing, the agent demonstrates its ability to guide the conversation in order to collect the information required to make relevant recommendations. The chatbot asks targeted questions to identify key details such as the recipient’s gender, the occasion, and the preferred product category.
+
+Once sufficient information is gathered, the agent calls the products API and retrieves a list of items that match the selected filters. The results are then presented to the user as recommended gift options.
+
+Using the **Show trace** feature in the Bedrock testing interface makes it possible to observe the agent’s internal reasoning process. The trace reveals how the agent interprets the conversation, determines the appropriate filters, and decides when to invoke the API to retrieve products. (04-rationale1.png & 05-rationale2.png)
+
+---
+
 # Outcome
 
 At the end of this stage, the following components were successfully implemented:
