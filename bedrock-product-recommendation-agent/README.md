@@ -66,7 +66,7 @@ This project progressively builds a full AI shopping assistant.
 | Multi-agent collaboration | Multiple agents coordinate tasks |
 
 ---
-
+```
 # Project Structure
 
 AWS-Agentic-AI_Portfolio
@@ -89,7 +89,7 @@ AWS-Agentic-AI_Portfolio
 │ └── README.md
 │
 └── README.md
-
+```
 
 Each module documents the **step-by-step implementation** and the infrastructure used.
 
