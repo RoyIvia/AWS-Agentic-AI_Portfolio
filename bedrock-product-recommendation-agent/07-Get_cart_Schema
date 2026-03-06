@@ -1,0 +1,58 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Get Cart API",
+    "version": "1.0.0",
+    "description": "This API retrieves the items in a user's cart."
+  },
+  "paths": {
+    "/cart": {
+      "get": {
+        "summary": "Get the user's cart",
+        "description": "Retrieves the list of products in the user's cart.",
+        "operationId":"getCart",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "query",
+            "description": "The ID of the user",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "product_name": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
