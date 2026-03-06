@@ -264,19 +264,6 @@ The agent was able to successfully retrieve and present product recommendations.
 
 ---
 
-
-
-This folder contains screenshots documenting the implementation process, including:
-
-- Agent creation interface
-- Agent instruction configuration
-- Action group setup
-- Test conversations with the agent
-
-These screenshots illustrate the exact configuration steps taken during deployment.
-
----
-
 # Outcome
 
 At the end of this stage, the following components were successfully implemented:
@@ -288,21 +275,6 @@ At the end of this stage, the following components were successfully implemented
 
 This stage establishes the **core AI agent framework** that subsequent stages build upon.
 
----
-
-# Next Stage
-
-The next phase introduces **shopping cart functionality**, allowing the agent to:
-
-- Add items to a cart
-- Retrieve cart contents
-- Track user sessions using email as an identifier
-
-See the next section:
-
-```
-01-Update_cart
-```
 
 ---
 
