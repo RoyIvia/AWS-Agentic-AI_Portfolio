@@ -1,0 +1,59 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Add to Cart API",
+    "version": "1.0.0",
+    "description": "This API adds a product to a user's cart."
+  },
+  "paths": {
+    "/cart": {
+      "post": {
+        "summary": "Add a product to the cart",
+        "description": "Adds a product to the user's cart. If the product already exists in the cart, it returns an error.",
+        "operationId":"postCart",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "query",
+            "description": "The ID of the user",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "productName",
+            "in": "query",
+            "description": "The name of the product to add to the cart",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
