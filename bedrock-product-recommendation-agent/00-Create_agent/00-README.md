@@ -286,10 +286,6 @@ At the end of this stage, the following components were successfully implemented
 This stage establishes the **core AI agent framework** that subsequent stages build upon.
 
 
----
 
-# Author
-
-**Roy Ivia**
 
 
