@@ -186,3 +186,64 @@ This call directly invokes the calculator tool to compute the **second derivativ
 
 Direct invocation is particularly useful during development and debugging of agent workflows.
 
+## Configuring Logging
+
+To improve visibility into agent execution, logging was enabled for the **Strands Agents SDK**. Strands uses Python’s built-in `logging` module, allowing it to integrate seamlessly with application-level logging configurations.
+
+The SDK follows a hierarchical logging structure:
+
+* Each module creates its own logger using `logging.getLogger(name)`
+* All SDK loggers inherit from the **"strands" root logger**
+* No log handlers or levels are configured by default, allowing developers to control logging behavior
+
+By configuring the **"strands" logger**, it becomes possible to monitor agent behavior such as model invocation, tool execution, and runtime operations.
+
+### Implementation
+
+```python
+import logging
+from strands import Agent
+
+# Enable Strands debug logging
+logging.getLogger("strands").setLevel(logging.DEBUG)  # or logging.INFO
+
+# Configure log format and output
+logging.basicConfig(
+    format="%(levelname)s | %(name)s | %(message)s",
+    handlers=[logging.StreamHandler()]
+)
+
+agent = Agent(model="us.anthropic.claude-sonnet-4-5-20250929-v1:0")
+agent("Hello!")
+```
+
+### Explanation
+
+This configuration performs two main actions:
+
+**Setting the log level**
+
+The `logging.getLogger("strands")` call configures the root logger for the Strands SDK. Setting the level to `DEBUG` enables detailed runtime information, which is particularly useful during development and debugging.
+
+**Defining the log format**
+
+The `logging.basicConfig()` function defines how log messages are displayed. In this configuration, logs include:
+
+* the log level
+* the logger name
+* the log message
+
+All logs are streamed to **standard error output**, allowing developers to observe agent behavior directly in the console.
+
+### Example Log Output
+
+When logging is enabled, agent execution events become visible during runtime.
+
+```text
+DEBUG | strands.agent | Initializing agent
+INFO  | strands.model | Sending request to model provider
+DEBUG | strands.tools | Executing tool
+```
+
+Enabling logging provides valuable insight into how the agent processes requests, interacts with models, and executes tools within the **agentic loop**.
+
