@@ -247,3 +247,70 @@ DEBUG | strands.tools | Executing tool
 
 Enabling logging provides valuable insight into how the agent processes requests, interacts with models, and executes tools within the **agentic loop**.
 
+## Configuring the Model Provider
+
+Strands Agents supports multiple model providers, allowing developers to select the model infrastructure that best fits their use case. While the default provider is **Amazon Bedrock**, the framework also supports other providers such as:
+
+* **Anthropic** — direct API access to Claude models
+* **LiteLLM** — unified interface for OpenAI, Mistral, and other providers
+* **Llama API** — access to Meta’s Llama models
+* **Ollama** — run models locally for privacy or offline use
+* **OpenAI** — direct access to OpenAI-compatible APIs
+* **Custom providers** — developer-defined integrations
+
+By default, Strands uses **Amazon Bedrock** with the **Claude Sonnet 4** model configured in the AWS region associated with the environment.
+
+---
+
+## Specifying a Model Directly
+
+A different Bedrock model can be selected by specifying the **model ID** when initializing the agent.
+
+### Implementation
+
+```python
+from strands import Agent
+
+agent = Agent(
+    model="us.anthropic.claude-haiku-4-5-20251001-v1:0"
+)
+
+print(agent.model.config)
+```
+
+### Explanation
+
+In this configuration, the `model` parameter explicitly defines which Bedrock model the agent should invoke. This ensures that the agent consistently uses the selected model rather than relying on the default configuration.
+
+---
+
+## Advanced Model Configuration
+
+For more granular control over the model settings, a **BedrockModel provider instance** can be created and passed to the agent.
+
+### Implementation
+
+```python
+import boto3
+from strands import Agent
+from strands.models import BedrockModel
+
+# Create a BedrockModel configuration
+bedrock_model = BedrockModel(
+    model_id="us.anthropic.claude-haiku-4-5-20251001-v1:0",
+    region_name="us-west-2",
+    temperature=0.3,
+)
+
+agent = Agent(model=bedrock_model)
+```
+
+### Explanation
+
+Using the `BedrockModel` configuration allows developers to customize model parameters such as:
+
+* **model_id** — the specific Bedrock model to invoke
+* **region_name** — the AWS region where the model is hosted
+* **temperature** — controls randomness in generated responses
+
+This approach provides greater flexibility when tuning model behavior for specific applications.
