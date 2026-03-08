@@ -80,12 +80,12 @@ agent = Agent(
 # Send a message to the agent
 response = agent("Hello! Tell me a joke.")
 ```
+## Explanation:
+
 
 <img width="1103" height="194" alt="image" src="https://github.com/user-attachments/assets/7547c134-620e-4694-a214-17a70033a788" />
 
 
-
-## Explanation:
 
 This implementation introduces two key changes:
 
