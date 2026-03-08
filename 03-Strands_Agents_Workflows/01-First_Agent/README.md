@@ -57,3 +57,45 @@ This implementation performs the following steps:
    The language model processes the request and returns a generated response, which is printed to the console.
 
 At this stage, the agent operates as a **basic conversational interface powered by an LLM**. 
+
+# Configuring the Model Provider
+
+The next step was configuring the agent to use a specific Amazon Bedrock model rather than relying on the default configuration.
+
+In this case, the agent was configured to use Claude Sonnet 4.5 through Amazon Bedrock.
+
+Implementation
+```python
+import warnings
+warnings.filterwarnings(action="ignore", message=r"datetime.datetime.utcnow")
+
+from strands import Agent
+
+# Initialize your agent
+agent = Agent(
+    model="us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    system_prompt="You are a helpful assistant that provides concise responses."
+)
+
+# Send a message to the agent
+response = agent("Hello! Tell me a joke.")
+```
+
+## Explanation:
+
+This implementation introduces two key changes:
+
+1. Suppressing runtime warnings
+
+A warning filter is applied to suppress deprecation warnings related to datetime.utcnow.
+This keeps the notebook output clean during execution.
+
+2. Explicit model configuration
+
+Instead of relying on the SDK default, the agent is explicitly configured to use the Bedrock model:
+
+us.anthropic.claude-sonnet-4-5-20250929-v1:0
+
+This ensures the agent always invokes the specified model.
+
+
