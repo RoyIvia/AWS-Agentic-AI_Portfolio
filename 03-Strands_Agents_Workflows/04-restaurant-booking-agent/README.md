@@ -2,7 +2,6 @@
 
 **Strands Agents + Amazon Bedrock + AWS Knowledge Base + DynamoDB**
 
-## Overview
 
 In this project, I built a **restaurant booking assistant agent** using the **Strands Agents SDK** integrated with several AWS services. The goal was to demonstrate how an AI agent can combine **LLM reasoning, retrieval (RAG), and transactional operations** to perform real-world tasks through natural language.
 
