@@ -6,7 +6,6 @@ The goal of this portfolio is to explore how autonomous AI agents can reason, us
 
 These projects demonstrate practical experience with **building, deploying, and integrating AI agents in cloud environments**.
 
----
 
 # Projects
 
