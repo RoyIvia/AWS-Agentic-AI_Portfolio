@@ -33,7 +33,6 @@ Topics covered:
 - Knowledge retrieval
 - Agent reasoning loops
 
----
 
 ## 3. Strands Agent Workflows
 
