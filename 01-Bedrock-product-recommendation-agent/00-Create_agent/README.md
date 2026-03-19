@@ -98,7 +98,7 @@ This template provisions all the backend resources required by the AI agent.
 
 Once the template is uploaded, proceed with the stack creation.
 
----
+
 
 # Resources Created by CloudFormation
 
@@ -141,7 +141,7 @@ The stack deploys several Lambda functions that serve as the backend APIs for th
 
 At this stage, the agent primarily interacts with **GetProductsFunction**.
 
----
+
 
 ## API Gateway
 
@@ -149,7 +149,7 @@ API Gateway exposes endpoints that allow the **Bedrock Agent Action Groups** to 
 
 This creates a **secure integration layer** between the AI agent and the backend services.
 
----
+
 
 # Creating the Amazon Bedrock Agent
 
@@ -173,7 +173,7 @@ Select:
 Create Agent
 ```
 
----
+
 
 # Agent Configuration
 
@@ -192,7 +192,7 @@ The selected model (**Claude Sonnet**) was chosen due to its strong reasoning ca
 <img width="810" height="715" alt="image" src="https://github.com/user-attachments/assets/51c36ce0-8f84-4c3a-9a1e-d396a1f36fa5" />
 
 
----
+
 
 # Agent Instruction Prompt
 
@@ -214,7 +214,7 @@ I Enabled User input in Additional settings:
 <img width="985" height="428" alt="image" src="https://github.com/user-attachments/assets/dadda6a2-2e44-4c31-98e7-eed4a33d83fc" />
 
 
----
+
 
 # Action Group Configuration
 
@@ -234,7 +234,7 @@ Key configuration steps included:
 
 This integration enables the agent to fetch real product data instead of generating generic responses.
 
----
+
 
 # Testing the Agent
 
@@ -262,7 +262,7 @@ The agent was able to successfully retrieve and present product recommendations.
 <img width="900" height="843" alt="image" src="https://github.com/user-attachments/assets/c915f218-f92e-4566-964f-47621a889c02" />
 
 
----
+
 
 ## Agent Interaction Example Breakdown
 
@@ -272,7 +272,7 @@ Once sufficient information is gathered, the agent calls the products API and re
 
 Using the **Show trace** feature in the Bedrock testing interface makes it possible to observe the agent’s internal reasoning process. The trace reveals how the agent interprets the conversation, determines the appropriate filters, and decides when to invoke the API to retrieve products. (04-rationale1.png & 05-rationale2.png)
 
----
+
 
 # Outcome
 
