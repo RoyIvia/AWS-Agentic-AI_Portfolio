@@ -56,7 +56,7 @@ Concepts explored:
 - High-capability models
 - AI workflow execution
 
----
+
 
 ## 5. GenAI Tools with Model Context Protocol (MCP)
 
