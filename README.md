@@ -88,7 +88,7 @@ This portfolio demonstrates hands-on experience with:
 - GenAI tool development
 - Model Context Protocol (MCP)
 
----
+
 
 # Technologies Used
 
@@ -99,7 +99,7 @@ This portfolio demonstrates hands-on experience with:
 - Nova Models
 - Model Context Protocol (MCP)
 
----
+
 
 # Author
 
