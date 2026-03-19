@@ -26,7 +26,7 @@ https://catalog.workshops.aws/e-commerce-in-a-bot/en-US/getting-started
 
 However, the documentation here reflects **my own implementation and deployment process in my AWS environment**.
 
----
+
 
 # Architecture Overview
 
@@ -54,7 +54,7 @@ DynamoDB Product Table
 
 This architecture allows the AI agent to remain **stateless and lightweight**, while the backend infrastructure handles data retrieval and business logic.
 
----
+
 
 # Infrastructure Provisioning
 
