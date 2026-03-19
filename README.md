@@ -45,7 +45,6 @@ Key concepts:
 - Tool orchestration
 - Task automation
 
----
 
 ## 4. Bedrock AgentCore with Nova Models
 
