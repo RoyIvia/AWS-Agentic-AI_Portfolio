@@ -104,7 +104,7 @@ Once the template is uploaded, proceed with the stack creation.
 
 The CloudFormation stack provisions the following infrastructure components.
 
----
+
 
 ## DynamoDB Tables
 
@@ -126,7 +126,7 @@ Stores cart information associated with each user session.
 
 This table will be used later when implementing cart functionality.
 
----
+
 
 ## Lambda Functions
 
