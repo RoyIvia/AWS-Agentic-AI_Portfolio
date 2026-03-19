@@ -62,7 +62,7 @@ The backend infrastructure required for the agent was provisioned using **AWS Cl
 
 Using CloudFormation allowed the environment to be deployed in a **reproducible and automated way**, ensuring all required services were created consistently.
 
----
+
 
 # Deploying the Infrastructure
 
@@ -88,7 +88,7 @@ Then choose:
 With new resources (standard)
 ```
 
----
+
 
 ## Step 2 — Upload the Template
 
