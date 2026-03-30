@@ -9,7 +9,6 @@ These projects demonstrate practical experience with **building, deploying, and 
 
 # Projects
 
-
 ## 1. Bedrock Product Recommendation Agent
 
 An intelligent chatbot built using **Amazon Bedrock Agents** that recommends products based on user preferences.
@@ -88,7 +87,6 @@ This portfolio demonstrates hands-on experience with:
 - Knowledge base integration
 - GenAI tool development
 - Model Context Protocol (MCP)
-
 
 
 # Technologies Used
