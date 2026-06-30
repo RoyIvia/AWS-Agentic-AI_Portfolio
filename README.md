@@ -21,7 +21,6 @@ Key concepts demonstrated:
 - AI-driven product recommendations
 
 
-
 ## 2. Agentic AI Building Blocks
 
 Exploration of the fundamental components that power modern AI agents.
