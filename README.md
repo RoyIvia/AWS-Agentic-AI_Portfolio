@@ -101,4 +101,5 @@ This portfolio demonstrates hands-on experience with:
 # Author
 
 Roy Ivia  
+
 Cloud & DevOps Engineer exploring **Agentic AI systems on AWS**.
