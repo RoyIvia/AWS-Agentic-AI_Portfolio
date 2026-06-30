@@ -100,6 +100,6 @@ This portfolio demonstrates hands-on experience with:
 
 # Author
 
-Roy Ivia  
+Roy Ngondi Ivia  
 
 Cloud & DevOps Engineer exploring **Agentic AI systems on AWS**.
