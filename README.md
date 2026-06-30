@@ -69,7 +69,6 @@ Topics covered:
 - Tool integration with AI agents
 
 
-
 ## 6. Spec-Driven AI Development with Kiro
 
 Designing AI systems using **spec-driven development**, enabling structured workflows for AI-assisted development.
