@@ -9,6 +9,7 @@ These projects demonstrate practical experience with **building, deploying, and 
 
 # Projects
 
+
 ## 1. Bedrock Product Recommendation Agent
 
 An intelligent chatbot built using **Amazon Bedrock Agents** that recommends products based on user preferences.
