@@ -1,6 +1,6 @@
 # AWS Agentic AI Portfolio
 
-This repository showcases hands-on projects focused on building **Agentic AI systems on AWS** using **Amazon Bedrock and modern AI agent frameworks**.
+This repository showcases  projects focused on building **Agentic AI systems on AWS** using **Amazon Bedrock and modern AI agent frameworks**.
 
 The goal of this portfolio is to explore how autonomous AI agents can reason, use tools, access knowledge bases, and orchestrate complex workflows.
 
